@@ -288,7 +288,7 @@ GF_FilterRegister HEVCDecoderRegister = {
 	.finalize = hevcdec_finalize,
 };
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_hevcdec265_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE hevcdec265_register(GF_FilterSession *session)
 {
 	return &HEVCDecoderRegister;
 }
@@ -296,5 +296,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_hevcdec265_register(GF_Fi
 #include "filter_register.h"
 __attribute__((constructor))
 void register_hevcdec265(void) {
-    gf_filter_auto_register("hevcdec265", dynCall_hevcdec265_register);
+    gf_filter_auto_register("hevcdec265", hevcdec265_register);
 }
