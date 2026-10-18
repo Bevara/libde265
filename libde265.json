@@ -1,5 +1,7 @@
 {
     "name": "libde265",
+    "version": "1.0.1",
+    "Format": ["HEVC"],
     "description": "HEVC video decoder",
     "filters":["hevcdec265"],
     "help": "This filter decodes HEVC (H.265) video elementary streams using libde265. Pairs with a container demuxer (e.g. isobmff) providing framed access units and an HVCC decoder config.",
