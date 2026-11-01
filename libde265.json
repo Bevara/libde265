@@ -12,7 +12,7 @@
     "filter_source":{
         "hevcdec265" : "dec_hevc.c"
     },
-    "using": ["mm_solver_1.0.1"],
+    "using": ["mm_solver_1.0.1", "mm_solver_1.0.2"],
     "patents": {
         "status": "licence-required",
         "note": "HEVC: Access Advance, Via LA and others",
