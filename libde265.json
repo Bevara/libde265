@@ -1,18 +1,28 @@
 {
     "name": "libde265",
     "version": "1.0.2",
-    "Format": ["HEVC"],
+    "Format": [
+        "HEVC"
+    ],
     "description": "HEVC video decoder",
-    "filters":["hevcdec265"],
+    "filters": [
+        "hevcdec265"
+    ],
     "help": "This filter decodes HEVC (H.265) video elementary streams using libde265. Pairs with a container demuxer (e.g. isobmff) providing framed access units and an HVCC decoder config.",
     "support": [
         "video"
     ],
-    "sources":"https://bevara.ddns.net/sources/libde265.accessor",
-    "filter_source":{
-        "hevcdec265" : "dec_hevc.c"
+    "sources": "https://bevara.ddns.net/sources/libde265.accessor",
+    "filter_source": {
+        "hevcdec265": "dec_hevc.c"
     },
-    "using": ["mm_solver_1.0.1", "mm_solver_1.0.2", "mm_solver_1.0.3", "mm_solver_1.0.4"],
+    "using": [
+        "mm_solver_1.0.1",
+        "mm_solver_1.0.2",
+        "mm_solver_1.0.3",
+        "mm_solver_1.0.4",
+        "mm_solver_1.0.5"
+    ],
     "patents": {
         "status": "licence-required",
         "note": "HEVC: Access Advance, Via LA and others",
